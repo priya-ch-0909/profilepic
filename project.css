@@ -1,0 +1,234 @@
+/* Center content */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Text alignment */
+.content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px; /* Adds space between headings, buttons, and navigation */
+}
+
+
+
+/* Spacing between buttons */
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 40px; /* More space between buttons */
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+}
+
+.buttons button {
+    margin: 0 15px; /* Space between buttons */
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+/* Bottom navigation bar */
+.navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 18px;
+    gap: 70px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar a {
+    margin: 0 40px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px; 
+}
+.buttons {
+    display: flex; /* Makes buttons sit side by side */
+    gap: 20px; /* Adds space between buttons */
+    margin-top: 20px;
+}
+
+.buttons a {
+    text-decoration: none;
+}
+
+.buttons button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* Theme changer button container */
+.theme-container {
+    margin-top: 10px; /* Adds space below the navigation bar */
+    display: flex;
+    justify-content: center;
+}
+
+/* Theme changer button */
+#theme-toggle {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background-color: #555;
+}
+.dark-button {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+/* Ensure it adapts in dark mode */
+.dark-mode .profile-pic {
+    border-color: white;
+}
+.profile-pic {
+    width: 180px; /* Increase size */
+    height: 180px;
+    border-radius: 50%; /* Ensures circular shape */
+    border: 4px solid #333; /* Keeps a clear border */
+    transition: border-color 0.3s ease;
+}
+.nav-container {
+    display: flex;
+    flex-direction: column; /* Places links vertically */
+    align-items: center; /* Centers links */
+    margin-top: 15px; /* Adds space below the image */
+    gap: 5px; /* Minimal spacing when idle */
+    transition: gap 0.3s ease; /* Smooth transition when space increases */
+
+}
+.nav-container a {
+    display: block; /* Makes links appear in a vertical list */
+    margin-bottom: 15px; /* Adds space between links */
+    display: flex; /*adeed new code here*/
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Reduce excessive spacing */
+    transition: gap 0.3s ease; /*to here*/
+}
+#h pre {
+  padding: 10px;
+}
+.profile-container, .nav-container, #user-container, #home-container {
+    width: 100%;
+}
+html, body {
+    overflow: auto;
+}
+
+#user-container {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#hh{
+    margin: 20px;
+}
+#lh{
+    margin-right: auto;
+}
+#gh{
+    margin-left: auto;
+}
+#lk, #gh {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #0073b1; /* LinkedIn default */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* GitHub button */
+#gh {
+    background-color: #333; /* GitHub dark */
+}
+
+/* Hover effects */
+#lk:hover {
+    background-color: #005582;
+}
+
+#gh:hover {
+    background-color: #555;
+}
+
+/* Button styling in dark mode */
+.dark-mode #lk {
+    background-color: white;
+    color: #0073b1;
+    border: 5px solid #0073b1;
+}
+.dark-mode #lk:hover {
+    background-color: #0073b1;
+    color: white;
+    border:5px solid #0073b1;
+}
+.dark-mode #gh {
+    background-color: #505050; /* Charcoal Gray */
+    color: white;
+    border: 3px solid white;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+
+}
+
+.dark-mode #gh:hover {
+    background-color: #808080; /* Slightly lighter gray for hover */
+    color: white;
+    border:3px solid #808080;
+}
+
+#home-container, #user-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    overflow: auto; /* Allows scrolling if needed */
+    max-height: none; 
+    justify-content: center;
+}
+#home-container pre {
+    margin: 0; /* Removes extra default margin  also this wholeis new code*/
+    padding: 10px 20px; /* Adds controlled spacing */
+    text-align: center; /* Ensures alignment */
+}
+pre{
+    font-family: "poppins" "Roboto" "Cursive" sans-serif;
+    font-size: 18px;;
+}
+
