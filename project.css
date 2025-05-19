@@ -269,3 +269,22 @@ a {
 .dark-mode a {
     color: white;
 }
+#home-container {
+    max-height: 300px; /* Limits height */
+    overflow-y: auto; /* Enables vertical scrolling */
+    padding: 10px;
+}
+#home-container pre {
+    white-space: pre-wrap; /* Ensures text wraps properly */
+    word-wrap: break-word; /* Prevents long words from overflowing */
+    text-align: left; /* Keeps structured format */
+}
+#home-container {
+    border: none !important; /* Removes any unwanted border */
+    padding: 10px;
+}
+#home-container pre {
+    display: block;
+    max-height: 300px;
+    overflow-y: scroll;
+}

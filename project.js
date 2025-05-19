@@ -39,7 +39,20 @@ document.getElementById("home-container").innerHTML = `
     Priya Chaudhary
     BTech (CSE)
     20 Years
-    GLA UNIVERSITY (MATHURA)
+    COLLEGE :GLA UNIVERSITY (MATHURA)
+    SCHOOL:Hanuman Prasad Ddhanuka
+    Sign:Virgo
+    DOB:25th April 2005
+    💡 Skills: Web Development, JavaScript, CSS, API Integration, Debugging
+    📌 Interests: Interactive UI Design, Theme Customization, Code Optimization
+    🌟 Projects:
+    - Portfolio Website
+    - API-based Data Fetching Tool
+    - Dynamic Theme Changer
+    – AI-powered cavity detection
+    – Build a task manager that tracks CPU and memory usage.
+    – Implement end-to-end encryption for messaging.
+    – Analyze password security using entropy calculation.
 </pre>
 `;
     document.querySelector(".nav-container").style.gap = "8px";
