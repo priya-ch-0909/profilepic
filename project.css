@@ -299,15 +299,6 @@ a {
 .dark-mode #user-container p {
     border-bottom: 2px solid white; /* White divider in dark mode */
 }
-
-
-
-
-
-
-
-
-
 body {
     background: linear-gradient(135deg, #c7cfd8, #a4c3d6, #58a5f8);
 }
