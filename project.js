@@ -10,6 +10,11 @@ promise.then((response)=>{
                 const userElement = document.createElement("p");
                 userElement.innerHTML = `<strong>Name:</strong> ${user.name} <br> <strong>Country:</strong> ${user.country} <br><img src=${user.photo} width="30" hieght="30"></img><br>`;
                 container.appendChild(userElement); // Append each user
+                // Add Horizontal Divider Below Each User
+                const divider = document.createElement("hr");
+                divider.classList.add("user-divider");
+                container.appendChild(divider);
+
             });
         })
     });
@@ -36,11 +41,11 @@ document.getElementById("home-link").addEventListener("click", function (event) 
 
 document.getElementById("home-container").innerHTML = `
 <pre>
-    Priya Chaudhary
+    PRIYA CHAUDHARY
     BTech (CSE)
     20 Years
-    COLLEGE :GLA UNIVERSITY (MATHURA)
-    SCHOOL:Hanuman Prasad Ddhanuka
+    College :GLA UNIVERSITY (MATHURA)
+    School:Hanuman Prasad Ddhanuka
     Sign:Virgo
     DOB:25th April 2005
     💡 Skills: Web Development, JavaScript, CSS, API Integration, Debugging

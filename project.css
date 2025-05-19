@@ -288,3 +288,14 @@ a {
     max-height: 300px;
     overflow-y: scroll;
 }
+#user-container p {
+    width: 90%;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #333; /* Default divider color */
+}
+
+/* Dark Mode Styling */
+.dark-mode #user-container p {
+    border-bottom: 2px solid white; /* White divider in dark mode */
+}
