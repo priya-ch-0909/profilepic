@@ -227,8 +227,45 @@ html, body {
     padding: 10px 20px; /* Adds controlled spacing */
     text-align: center; /* Ensures alignment */
 }
-pre{
-    font-family: "poppins" "Roboto" "Cursive" sans-serif;
-    font-size: 18px;;
+/* Default styling for pre */
+pre {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: white;
+    background-color: #333; /* Dark background */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+/* 🌟 Hover Effect in Light Theme 🌟 */
+pre:hover {
+    background-color: rgba(0, 0, 0, 0.9); /* Darkens background significantly */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 1); /* Strong black glow */
+    transform: scale(1.04);
 }
 
+/* 🌑 Hover Effect in Dark Theme 🌑 (Still has white glow) */
+.dark-mode pre:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Slightly lighter */
+    box-shadow: 0px 0px 25px rgba(255, 255, 255, 1); /* Strong white glow */
+    transform: scale(1.04);
+}
+/* Default link styling */
+a {
+    font-family: "Poppins", sans-serif; /* Clean, modern font */
+    font-size: 18px; /* Comfortable reading size */
+    text-decoration: none; /* Removes underline */
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+/* Light Theme: Links appear black */
+a {
+    color: black;
+}
+
+/* Dark Theme: Links appear white */
+.dark-mode a {
+    color: white;
+}

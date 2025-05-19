@@ -42,5 +42,5 @@ document.getElementById("home-container").innerHTML = `
     GLA UNIVERSITY (MATHURA)
 </pre>
 `;
-    document.querySelector(".nav-container").style.gap = "3px";
+    document.querySelector(".nav-container").style.gap = "8px";
 });
