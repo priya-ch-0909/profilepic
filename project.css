@@ -248,8 +248,8 @@ pre:hover {
 
 /* 🌑 Hover Effect in Dark Theme 🌑 (Still has white glow) */
 .dark-mode pre:hover {
-    background-color: rgba(255, 255, 255, 0.3); /* Slightly lighter */
-    box-shadow: 0px 0px 25px rgba(255, 255, 255, 1); /* Strong white glow */
+    background-color: rgba(0,0,0,0.9); /* Slightly lighter */
+    box-shadow: 0px 0px 20px rgba(0,0, 0,1); /* Strong white glow */
     transform: scale(1.04);
 }
 /* Default link styling */
@@ -298,4 +298,43 @@ a {
 /* Dark Mode Styling */
 .dark-mode #user-container p {
     border-bottom: 2px solid white; /* White divider in dark mode */
+}
+
+
+
+
+
+
+
+
+
+body {
+    background: linear-gradient(135deg, #c7cfd8, #a4c3d6, #58a5f8);
+}
+@keyframes floating {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+.floating-shape {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    animation: floating 6s infinite ease-in-out;
+}
+.light-mode {
+    background-image: url('light-pattern.png');
+    background-size: cover;
+}
+
+.dark-mode {
+    background-image: url('dark-pattern.png');
+    background-size: cover;
+}
+.dark-mode {
+    background: linear-gradient(135deg, #fcfcfd, #cdd1d7, #090909); /* Deep blue gradient */
+    color: white;
 }
